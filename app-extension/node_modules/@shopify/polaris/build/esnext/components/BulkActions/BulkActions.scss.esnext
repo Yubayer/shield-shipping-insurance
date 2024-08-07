@@ -1,0 +1,16 @@
+import './BulkActions.css';
+
+var styles = {
+  "Group": "Polaris-BulkActions__Group_33bvy",
+  "Group-not-sticky": "Polaris-BulkActions--groupNotSticky_1cubd",
+  "Group-entering": "Polaris-BulkActions__Group--entering_2lknf",
+  "Group-exiting": "Polaris-BulkActions__Group--exiting_5dj16",
+  "Group-entered": "Polaris-BulkActions__Group--entered_1pt5s",
+  "Group-exited": "Polaris-BulkActions__Group--exited_8lefn",
+  "Group-measuring": "Polaris-BulkActions__Group--measuring_1kdrm",
+  "ButtonGroupWrapper": "Polaris-BulkActions__ButtonGroupWrapper_1qcgd",
+  "BulkActionButton": "Polaris-BulkActions__BulkActionButton_1njj8",
+  "disabled": "Polaris-BulkActions--disabled_hcuh9"
+};
+
+export { styles as default };

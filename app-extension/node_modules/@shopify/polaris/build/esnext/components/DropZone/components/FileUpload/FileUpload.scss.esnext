@@ -1,0 +1,15 @@
+import './FileUpload.css';
+
+var styles = {
+  "FileUpload": "Polaris-DropZone-FileUpload_1fbjx",
+  "large": "Polaris-DropZone-FileUpload--large_2qh0r",
+  "small": "Polaris-DropZone-FileUpload--small_2v637",
+  "Action": "Polaris-DropZone-FileUpload__Action_r96cs",
+  "disabled": "Polaris-DropZone-FileUpload--disabled_hcuh9",
+  "ActionTitle": "Polaris-DropZone-FileUpload__ActionTitle_e3cta",
+  "ActionTitle-disabled": "Polaris-DropZone-FileUpload__ActionTitle--disabled_1fqj9",
+  "ActionTitle-focused": "Polaris-DropZone-FileUpload__ActionTitle--focused_3671t",
+  "UploadIcon": "Polaris-DropZone-FileUpload__UploadIcon_17xjj"
+};
+
+export { styles as default };

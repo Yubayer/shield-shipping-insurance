@@ -1,0 +1,8 @@
+import './UserMenu.css';
+
+var styles = {
+  "Details": "Polaris-TopBar-UserMenu__Details_1bdkj",
+  "Message": "Polaris-TopBar-UserMenu__Message_1u7n0"
+};
+
+export { styles as default };

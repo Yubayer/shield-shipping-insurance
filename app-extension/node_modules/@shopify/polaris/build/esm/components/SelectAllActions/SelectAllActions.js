@@ -1,0 +1,51 @@
+import React, { forwardRef } from 'react';
+import { Transition } from 'react-transition-group';
+import { classNames } from '../../utilities/css.js';
+import styles from './SelectAllActions.scss.js';
+import { CheckableButton } from '../CheckableButton/CheckableButton.js';
+import { UnstyledButton } from '../UnstyledButton/UnstyledButton.js';
+
+const SelectAllActions = /*#__PURE__*/forwardRef(function SelectAllActions({
+  accessibilityLabel,
+  label,
+  selected,
+  selectMode,
+  paginatedSelectAllText,
+  paginatedSelectAllAction,
+  disabled,
+  onToggleAll
+}, ref) {
+  const paginatedSelectAllActionMarkup = paginatedSelectAllAction ? /*#__PURE__*/React.createElement(UnstyledButton, {
+    className: styles.AllAction,
+    onClick: paginatedSelectAllAction.onAction,
+    size: "slim",
+    disabled: disabled
+  }, paginatedSelectAllAction.content) : null;
+  const hasTextAndAction = paginatedSelectAllText && paginatedSelectAllAction;
+  const paginatedSelectAllMarkup = paginatedSelectAllActionMarkup ? /*#__PURE__*/React.createElement("div", {
+    className: styles.PaginatedSelectAll
+  }, paginatedSelectAllActionMarkup) : null;
+  const ariaLive = hasTextAndAction ? 'polite' : undefined;
+  const checkableButtonProps = {
+    accessibilityLabel,
+    label: hasTextAndAction ? paginatedSelectAllText : label,
+    selected,
+    onToggleAll,
+    disabled,
+    ariaLive,
+    ref
+  };
+  const markup = /*#__PURE__*/React.createElement(Transition, {
+    timeout: 0,
+    in: selectMode,
+    key: "markup"
+  }, status => {
+    const wrapperClasses = classNames(styles.SelectAllActions, styles[`SelectAllActions-${status}`]);
+    return /*#__PURE__*/React.createElement("div", {
+      className: wrapperClasses
+    }, /*#__PURE__*/React.createElement(CheckableButton, checkableButtonProps), paginatedSelectAllMarkup);
+  });
+  return markup;
+});
+
+export { SelectAllActions };

@@ -1,0 +1,159 @@
+{% comment %}
+  shop.metafields.protection.isModal === 'false' means that the modal is disabled, shield will be displayed on the cart page
+{% endcomment %}
+{% if shop.metafields.protection.isActivated == 'true' or shop.metafields.protection.isActivated == true %}
+  <style>
+    .novaa--shield--wrapper {
+      background-color: white;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      border: 2px solid #eaecf0;
+    }
+
+    .novaa--shield--text h3 {
+      font-size: 17px;
+      line-height: 20px;
+      color: #101828;
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+    }
+
+    .novaa--shield--text p {
+      font-size: 12px;
+      line-height: 16px;
+      color: #475467;
+      margin: 5px 0 0 0;
+      padding: 0;
+      font-weight: 400;
+      font-weight: 400;
+    }
+
+    .novaa--shield--switch {
+      position: relative;
+      width: 44px !important;
+      height: 24px;
+      -webkit-appearance: none;
+      background: #c6c6c6;
+      outline: none;
+      border-radius: 12px;
+      box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.2);
+      transition: 0.7s;
+    }
+
+    .novaa--shield--switch:checked {
+      background: #1d2939;
+    }
+
+    .novaa--shield--switch:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      transform: scale(0.8);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+    }
+
+    .novaa--shield--switch:checked:before {
+      left: 19px;
+    }
+
+    .novaa--function--wrapper {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .novaa--function--wrapper span {
+      font-size: 14px;
+      line-height: 21px;
+      color: #1d2939;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  {% assign protected_product_id = shop.metafields.protection.product.value.product_id %}
+  {% if shop.metafields.protection.isModal == 'false' or shop.metafields.protection.isModal == false %}
+    <div id="__shield">
+      {% liquid
+        assign protect_product_price = 0
+        for item in cart.items
+          if item.product.id == protected_product_id
+            assign protect_product_price = item.price
+          endif
+        endfor
+        assign rules = shop.metafields.protection.rules.value
+        assign cart_total = cart.total_price | minus: protect_product_price | money_without_currency | remove: ',' | times: 1.0
+        assign protect_cost = 0
+
+        for rule in rules
+          assign max = rule.to | times: 1
+          assign min = rule.from | times: 1
+
+          if rule.type == '$'
+            assign protect_cost = rule.value
+          else
+            if min <= cart_total and max >= cart_total
+              assign protect_cost = cart_total | times: rule.value | divided_by: 100.0
+              assign protect_cost = protect_cost | round: 2
+            elsif max < cart_total
+              assign last_rule = rules.last
+              assign protect_cost = cart_total | times: last_rule.value | divided_by: 100.0
+              assign protect_cost = protect_cost | round: 2
+            endif
+          endif
+        endfor
+      %}
+
+      <div class="novaa--shield--wrapper">
+        <div class="novaa--shield--icon">
+          <img
+            src="{{ shop.metafields.protection.app_url }}/public/images/shield-icon.png"
+            width="30px"
+            height="30px"
+            alt="novaa--shield"
+          >
+        </div>
+        <div class="novaa--shield--text">
+          <h3>Shipping Insurance</h3>
+          <p>Against loss, theft, or damage in transit and instant resolution.</p>
+        </div>
+        <div class="novaa--shield--function">
+          <div class="novaa--function--wrapper protection__checkbox__">
+            <input class=" novaa--shield--switch" type="checkbox" checked>
+            <span>
+              {{ cart.currency.symbol -}}
+              {{- protect_cost -}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Shield",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "modal_title",
+      "label": "Modal Title",
+      "default": "Protect My Order"
+    }
+  ]
+}
+{% endschema %}

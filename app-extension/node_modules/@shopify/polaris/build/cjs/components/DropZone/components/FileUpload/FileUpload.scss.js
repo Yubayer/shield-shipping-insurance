@@ -1,0 +1,17 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var styles = {
+  "FileUpload": "Polaris-DropZone-FileUpload",
+  "large": "Polaris-DropZone-FileUpload--large",
+  "small": "Polaris-DropZone-FileUpload--small",
+  "Action": "Polaris-DropZone-FileUpload__Action",
+  "disabled": "Polaris-DropZone-FileUpload--disabled",
+  "ActionTitle": "Polaris-DropZone-FileUpload__ActionTitle",
+  "ActionTitle-disabled": "Polaris-DropZone-FileUpload__ActionTitle--disabled",
+  "ActionTitle-focused": "Polaris-DropZone-FileUpload__ActionTitle--focused",
+  "UploadIcon": "Polaris-DropZone-FileUpload__UploadIcon"
+};
+
+exports.default = styles;

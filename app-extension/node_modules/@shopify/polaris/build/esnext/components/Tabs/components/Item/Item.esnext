@@ -1,0 +1,39 @@
+import React, { memo, useRef, useEffect } from 'react';
+import { classNames } from '../../../../utilities/css.esnext';
+import styles from '../../Tabs.scss.esnext';
+import { UnstyledLink } from '../../../UnstyledLink/UnstyledLink.esnext';
+
+const Item = /*#__PURE__*/memo(function Item({
+  id,
+  focused,
+  children,
+  url,
+  accessibilityLabel,
+  onClick = noop
+}) {
+  const focusedNode = useRef(null);
+  useEffect(() => {
+    if (focusedNode.current && focusedNode.current instanceof HTMLElement && focused) {
+      focusedNode.current.focus();
+    }
+  }, [focusedNode, focused]);
+  const classname = classNames(styles.Item);
+  const sharedProps = {
+    id,
+    ref: focusedNode,
+    onClick,
+    className: classname,
+    'aria-selected': false,
+    'aria-label': accessibilityLabel
+  };
+  const markup = url ? /*#__PURE__*/React.createElement(UnstyledLink, Object.assign({}, sharedProps, {
+    url: url
+  }), children) : /*#__PURE__*/React.createElement("button", Object.assign({}, sharedProps, {
+    ref: focusedNode,
+    type: "button"
+  }), children);
+  return /*#__PURE__*/React.createElement("li", null, markup);
+});
+function noop() {}
+
+export { Item };

@@ -1,0 +1,9 @@
+import './DirectionButton.css';
+
+var styles = {
+  "DirectionButton": "Polaris-SortButton-DirectionButton_1lqxu",
+  "DirectionButton-active": "Polaris-SortButton-DirectionButton__DirectionButton--active_1n7us",
+  "Label": "Polaris-SortButton-DirectionButton__Label_2vd36"
+};
+
+export { styles as default };

@@ -1,0 +1,30 @@
+  2024-07-11 13:58:05 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-11 13:58:06 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-11 14:04:45 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-11 14:04:47 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-12 05:14:00 App\Jobs\RulesSyncJob .......................... RUNNING
+  2024-07-12 05:14:01 App\Jobs\RulesSyncJob .................... 602.49ms DONE
+  2024-07-12 05:28:19 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-12 05:28:20 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-12 05:49:15 App\Jobs\RulesSyncJob .......................... RUNNING
+  2024-07-12 05:49:16 App\Jobs\RulesSyncJob .................... 521.44ms DONE
+  2024-07-12 05:52:31 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-12 05:52:32 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-12 17:26:33 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-12 17:26:34 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-12 18:14:12 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-12 18:14:12 App\Jobs\OrdersPaidJob .................... 17.22ms DONE
+  2024-07-13 07:16:11 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-13 07:16:12 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-13 12:21:33 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-13 12:21:33 App\Jobs\OrdersPaidJob .................... 50.90ms DONE
+  2024-07-13 12:22:45 App\Jobs\RulesSyncJob .......................... RUNNING
+  2024-07-13 12:22:46 App\Jobs\RulesSyncJob .................... 674.88ms DONE
+  2024-07-13 12:23:34 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-13 12:23:35 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-13 19:46:01 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-13 19:46:02 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-13 19:50:41 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-13 19:50:42 App\Jobs\OrdersPaidJob ......................... 1s DONE
+  2024-07-13 20:24:56 App\Jobs\OrdersPaidJob ......................... RUNNING
+  2024-07-13 20:24:57 App\Jobs\OrdersPaidJob ......................... 1s DONE

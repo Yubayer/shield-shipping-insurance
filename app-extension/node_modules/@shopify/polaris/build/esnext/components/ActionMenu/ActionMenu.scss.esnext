@@ -1,0 +1,7 @@
+import './ActionMenu.css';
+
+var styles = {
+  "ActionMenu": "Polaris-ActionMenu_1hlnt"
+};
+
+export { styles as default };

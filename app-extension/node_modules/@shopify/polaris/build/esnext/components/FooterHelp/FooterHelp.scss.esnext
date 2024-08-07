@@ -1,0 +1,8 @@
+import './FooterHelp.css';
+
+var styles = {
+  "FooterHelp": "Polaris-FooterHelp_10cj9",
+  "Text": "Polaris-FooterHelp__Text_yj3uv"
+};
+
+export { styles as default };

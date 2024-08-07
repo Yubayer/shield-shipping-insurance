@@ -1,0 +1,7 @@
+import './RangeSlider.css';
+
+var sharedStyles = {
+  "RangeSlider": "Polaris-RangeSlider_9f1ur"
+};
+
+export { sharedStyles as default };

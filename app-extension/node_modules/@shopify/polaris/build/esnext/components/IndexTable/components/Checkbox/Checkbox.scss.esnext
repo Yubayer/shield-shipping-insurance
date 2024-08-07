@@ -1,0 +1,8 @@
+import './Checkbox.css';
+
+var styles = {
+  "TableCellContentContainer": "Polaris-IndexTable-Checkbox__TableCellContentContainer_1pnud",
+  "Wrapper": "Polaris-IndexTable-Checkbox__Wrapper_mkrm3"
+};
+
+export { styles as default };

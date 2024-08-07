@@ -1,0 +1,24 @@
+import React from 'react';
+import { classNames } from '../../utilities/css.js';
+import styles from './Label.scss.js';
+
+function labelID(id) {
+  return `${id}Label`;
+}
+function Label({
+  children,
+  id,
+  hidden,
+  requiredIndicator
+}) {
+  const className = classNames(styles.Label, hidden && styles.hidden);
+  return /*#__PURE__*/React.createElement("div", {
+    className: className
+  }, /*#__PURE__*/React.createElement("label", {
+    id: labelID(id),
+    htmlFor: id,
+    className: classNames(styles.Text, requiredIndicator && styles.RequiredIndicator)
+  }, children));
+}
+
+export { Label, labelID };

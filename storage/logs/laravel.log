@@ -1,0 +1,613 @@
+[2024-08-04 06:43:09] production.INFO: webhookAppUninstalled------ {"data":{"id":67094544599,"name":"Quickstart (efc12c7c)","email":"shopify.app.devs@gmail.com","domain":"quickstart-efc12c7c.myshopify.com","province":null,"country":"BD","address1":"dhaka","zip":"1216","city":"dhaka","source":null,"phone":null,"latitude":23.8172565,"longitude":90.37044859999999,"primary_locale":"en","address2":null,"created_at":"2023-10-31T06:55:42-04:00","updated_at":"2024-08-04T02:30:06-04:00","country_code":"BD","country_name":"Bangladesh","currency":"BDT","customer_email":"shopify.app.devs@gmail.com","timezone":"(GMT-05:00) America/New_York","iana_timezone":"America/New_York","shop_owner":"Shopify App Dev","money_format":"Tk {{amount}}","money_with_currency_format":"Tk {{amount}} BDT","weight_unit":"kg","province_code":null,"taxes_included":false,"auto_configure_tax_inclusivity":null,"tax_shipping":null,"county_taxes":true,"plan_display_name":"Developer Preview","plan_name":"partner_test","has_discounts":true,"has_gift_cards":true,"myshopify_domain":"quickstart-efc12c7c.myshopify.com","google_apps_domain":null,"google_apps_login_enabled":null,"money_in_emails_format":"Tk {{amount}}","money_with_currency_in_emails_format":"Tk {{amount}} BDT","eligible_for_payments":false,"requires_extra_payments_agreement":false,"password_enabled":true,"has_storefront":true,"finances":true,"primary_location_id":72464138455,"checkout_api_supported":true,"multi_location_enabled":true,"setup_required":false,"pre_launch_enabled":false,"enabled_presentment_currencies":["BDT","MXN"],"marketing_sms_consent_enabled_at_checkout":false,"transactional_sms_disabled":true},"domain":"quickstart-efc12c7c.myshopify.com"} 
+[2024-08-04 06:45:02] production.INFO: AppUninstalledJob------------- {"domain":"quickstart-efc12c7c.myshopify.com","data":{"id":67094544599,"name":"Quickstart (efc12c7c)","email":"shopify.app.devs@gmail.com","domain":"quickstart-efc12c7c.myshopify.com","province":null,"country":"BD","address1":"dhaka","zip":"1216","city":"dhaka","source":null,"phone":null,"latitude":23.8172564999999991641743690706789493560791015625,"longitude":90.3704485999999889145328779704868793487548828125,"primary_locale":"en","address2":null,"created_at":"2023-10-31T06:55:42-04:00","updated_at":"2024-08-04T02:30:06-04:00","country_code":"BD","country_name":"Bangladesh","currency":"BDT","customer_email":"shopify.app.devs@gmail.com","timezone":"(GMT-05:00) America/New_York","iana_timezone":"America/New_York","shop_owner":"Shopify App Dev","money_format":"Tk {{amount}}","money_with_currency_format":"Tk {{amount}} BDT","weight_unit":"kg","province_code":null,"taxes_included":false,"auto_configure_tax_inclusivity":null,"tax_shipping":null,"county_taxes":true,"plan_display_name":"Developer Preview","plan_name":"partner_test","has_discounts":true,"has_gift_cards":true,"myshopify_domain":"quickstart-efc12c7c.myshopify.com","google_apps_domain":null,"google_apps_login_enabled":null,"money_in_emails_format":"Tk {{amount}}","money_with_currency_in_emails_format":"Tk {{amount}} BDT","eligible_for_payments":false,"requires_extra_payments_agreement":false,"password_enabled":true,"has_storefront":true,"finances":true,"primary_location_id":72464138455,"checkout_api_supported":true,"multi_location_enabled":true,"setup_required":false,"pre_launch_enabled":false,"enabled_presentment_currencies":["BDT","MXN"],"marketing_sms_consent_enabled_at_checkout":false,"transactional_sms_disabled":true}} 
+[2024-08-04 06:45:02] production.INFO: AppUninstalledJob - user exists ------------ {"user":{"App\\Models\\User":{"id":4,"name":"quickstart-efc12c7c.myshopify.com","email":"shop@quickstart-efc12c7c.myshopify.com","email_verified_at":null,"shop_id":67094544599,"shop_gid":"gid://shopify/Shop/67094544599","created_at":"2024-08-04T06:14:24.000000Z","updated_at":"2024-08-04T06:28:49.000000Z","shopify_grandfathered":0,"shopify_namespace":null,"shopify_freemium":0,"plan_id":null,"deleted_at":null,"password_updated_at":"2024-08-04","theme_support_level":1}}} 
+[2024-08-04 06:47:07] production.INFO: ShopInstalledListener:handle {"shop_domain":"kdsfklsdjfklsdajflsdajflksdjf.myshopify.com"} 
+[2024-08-04 06:47:09] production.INFO: webhook job -------- {"app uninstall":{"errors":false,"response":{"GuzzleHttp\\Psr7\\Response":[]},"status":201,"body":{"Gnikyt\\BasicShopifyAPI\\ResponseAccess":{"webhook":{"id":1386847502424,"address":"https://novaalab.articmaze.dev/public/public/webhook/app/uninstalled","topic":"app/uninstalled","created_at":"2024-08-04T02:47:10-04:00","updated_at":"2024-08-04T02:47:10-04:00","format":"json","fields":[],"metafield_namespaces":[],"api_version":"2024-04","private_metafield_namespaces":[]}}},"link":null,"timestamps":[]},"order paid job":{"errors":false,"response":{"GuzzleHttp\\Psr7\\Response":[]},"status":201,"body":{"Gnikyt\\BasicShopifyAPI\\ResponseAccess":{"webhook":{"id":1386847535192,"address":"https://novaalab.articmaze.dev/public/public/webhook/orders/paid","topic":"orders/paid","created_at":"2024-08-04T02:47:10-04:00","updated_at":"2024-08-04T02:47:10-04:00","format":"json","fields":[],"metafield_namespaces":[],"api_version":"2024-04","private_metafield_namespaces":[]}}},"link":null,"timestamps":[1722754029221940.0]}} 
+[2024-08-04 06:47:10] production.INFO: App URL Metafield Synced------------App url metafield data {"metafield response":{"errors":false,"response":{"GuzzleHttp\\Psr7\\Response":[]},"status":200,"body":{"Gnikyt\\BasicShopifyAPI\\ResponseAccess":{"data":{"metafieldsSet":{"metafields":[{"id":"gid://shopify/Metafield/26818930770008","key":"app_url","namespace":"protection","value":"https://novaalab.articmaze.dev","createdAt":"2024-07-10T12:31:16Z","updatedAt":"2024-08-04T06:47:11Z","type":"single_line_text_field"}],"userErrors":[]}},"extensions":{"cost":{"requestedQueryCost":10,"actualQueryCost":10,"throttleStatus":{"maximumAvailable":2000.0,"currentlyAvailable":1990,"restoreRate":100.0}}}}},"timestamps":[1722754029710686.0]}} 
+[2024-08-04 06:47:10] production.INFO: App IsModal Metafield Synced------------App isModal metafield data {"metafield response":{"errors":false,"response":{"GuzzleHttp\\Psr7\\Response":[]},"status":200,"body":{"Gnikyt\\BasicShopifyAPI\\ResponseAccess":{"data":{"metafieldsSet":{"metafields":[{"id":"gid://shopify/Metafield/31764418822232","key":"isModal","namespace":"protection","value":"false","createdAt":"2024-07-27T08:41:31Z","updatedAt":"2024-08-04T06:47:11Z","type":"single_line_text_field"}],"userErrors":[]}},"extensions":{"cost":{"requestedQueryCost":10,"actualQueryCost":10,"throttleStatus":{"maximumAvailable":2000.0,"currentlyAvailable":1990,"restoreRate":100.0}}}}},"timestamps":[1722754030122251.0,1722754029710686.0]}} 
+[2024-08-04 07:06:07] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:08:28] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:08:44] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:12:01] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:13:37] production.ERROR: SQLSTATE[HY000] [2002] No such file or directory (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'articmaz_novaalab' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No such file or directory (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'articmaz_novaalab' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name) at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(983): Illuminate\\Database\\Connection->runQueryCallback('select table_na...', Array, Object(Closure))
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(962): Illuminate\\Database\\Connection->tryAgainIfCausedByLostConnection(Object(Illuminate\\Database\\QueryException), 'select table_na...', Array, Object(Closure))
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(785): Illuminate\\Database\\Connection->handleQueryException(Object(Illuminate\\Database\\QueryException), 'select table_na...', Array, Object(Closure))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(414): Illuminate\\Database\\Connection->run('select table_na...', Array, Object(Closure))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(401): Illuminate\\Database\\Connection->select('select table_na...', Array, false)
+#5 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(41): Illuminate\\Database\\Connection->selectFromWriteConnection('select table_na...')
+#6 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(165): Illuminate\\Database\\Schema\\MySqlBuilder->getTables(false)
+#7 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(184): Illuminate\\Database\\Schema\\Builder->hasTable('migrations')
+#8 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(700): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#9 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#10 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Support/helpers.php(248): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#11 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): retry(1, Object(Closure), 0, Object(Closure))
+#12 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#13 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(84): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#14 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#15 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#16 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#17 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#19 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#20 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#21 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#22 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Command/Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#24 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No such file or directory at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(65): PDO->__construct('mysql:host=loca...', 'articmaz_novaal...', Object(SensitiveParameterValue), Array)
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(83): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=loca...', 'articmaz_novaal...', 'novaalab1111111...', Array)
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(48): Illuminate\\Database\\Connectors\\Connector->tryAgainIfCausedByLostConnection(Object(PDOException), 'mysql:host=loca...', 'articmaz_novaal...', 'novaalab1111111...', Array)
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=loca...', Array, Array)
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#5 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#6 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1339): call_user_func(Object(Closure))
+#7 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(528): Illuminate\\Database\\Connection->getPdo()
+#8 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(423): Illuminate\\Database\\Connection->getPdoForSelect(false)
+#9 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(816): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select table_na...', Array)
+#10 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(983): Illuminate\\Database\\Connection->runQueryCallback('select table_na...', Array, Object(Closure))
+#11 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(962): Illuminate\\Database\\Connection->tryAgainIfCausedByLostConnection(Object(Illuminate\\Database\\QueryException), 'select table_na...', Array, Object(Closure))
+#12 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(785): Illuminate\\Database\\Connection->handleQueryException(Object(Illuminate\\Database\\QueryException), 'select table_na...', Array, Object(Closure))
+#13 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(414): Illuminate\\Database\\Connection->run('select table_na...', Array, Object(Closure))
+#14 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Connection.php(401): Illuminate\\Database\\Connection->select('select table_na...', Array, false)
+#15 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(41): Illuminate\\Database\\Connection->selectFromWriteConnection('select table_na...')
+#16 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(165): Illuminate\\Database\\Schema\\MySqlBuilder->getTables(false)
+#17 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(184): Illuminate\\Database\\Schema\\Builder->hasTable('migrations')
+#18 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(700): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#19 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#20 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Support/helpers.php(248): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#21 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): retry(1, Object(Closure), 0, Object(Closure))
+#22 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#23 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(84): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#24 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#25 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#26 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#27 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#28 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#29 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#30 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#31 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#32 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Command/Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#33 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#34 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#38 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#39 {main}
+"} 
+[2024-08-04 07:51:41] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:52:55] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:54:01] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:56:16] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 07:57:28] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:06:13] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:08:44] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:12:09] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:12:30] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:13:08] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:14:14] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:17:00] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:18:44] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:21:01] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:22:16] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:24:53] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:26:46] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:28:44] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:29:27] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:29:54] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:31:54] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:32:52] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:33:41] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:33:54] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:34:50] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:38:09] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:39:21] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:47:25] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:48:41] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:56:34] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:58:16] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 08:58:26] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:01:57] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:02:16] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:05:32] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:07:00] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:16:05] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:20:03] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:24:42] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:33:12] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:39:05] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:39:20] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:41:34] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:41:44] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:42:52] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 09:47:40] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 11:11:56] production.ERROR: Command "serclear" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serclear\" is not defined. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:737)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('serclear')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 {main}
+"} 
+[2024-08-04 11:15:36] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 11:15:44] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 11:19:32] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 11:21:39] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 11:59:12] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 12:06:00] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 12:06:29] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2024-08-04 12:19:01] production.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php:669)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('ide-helper')
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(266): Symfony\\Component\\Console\\Application->find('ide-helper:gene...')
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

@@ -1,0 +1,7 @@
+import './EmptyState.css';
+
+var styles = {
+  "imageContained": "Polaris-EmptyState--imageContained_z6t0k"
+};
+
+export { styles as default };

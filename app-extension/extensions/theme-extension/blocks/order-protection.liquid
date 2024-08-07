@@ -1,0 +1,434 @@
+{% if shop.metafields.protection.isActivated == 'true' or shop.metafields.protection.isActivated == true %}
+  {% assign protectionproductobject = all_products[shop.metafields.protection.product.value.product_handle] %}
+  {% assign protection_styles = shop.metafields.protection.styles.value %}
+
+  {% unless shop.metafields.protection.rules == blank %}
+    {% render 'protection-modal', cart: cart, shop: shop, protection_styles: protection_styles, block: block %}
+
+    <script>
+      {% comment %} set dependency variable {% endcomment %}
+      window.protectMyOrder = window.protectMyOrder || {};
+      protectMyOrder.call = 1;
+      protectMyOrder.url = `{{ shop.metafields.protection.app_url }}/public`;
+      protectMyOrder.protectionCost = 0;
+      protectMyOrder.currency_symble = `{{ cart.currency.symbol }}`;
+      protectMyOrder.existingCartItemKey = '';
+      protectMyOrder.variantInProduct = {
+        isExists: false
+      }
+      protectMyOrder.isModal =  "{{ shop.metafields.protection.isModal }}" === 'true' ? true : false;
+
+      const styles__raw__data = `{{ shop.metafields.protection.styles }}`;
+      if(styles__raw__data) protectMyOrder.styles = JSON.parse(styles__raw__data);
+
+      const rules_raw_data = `{{ shop.metafields.protection.rules }}`;
+      const product_raw_data = `{{ shop.metafields.protection.product }}`;
+
+      if (rules_raw_data) protectMyOrder.rules = JSON.parse(rules_raw_data);
+      if (product_raw_data) protectMyOrder.product = JSON.parse(product_raw_data);
+
+      //protectMyOrder rules value update by cart.currency.rate
+      {% comment %} protectMyOrder.rules?.forEach((rule, index) => {
+        if(rule.type === '$') {
+          protectMyOrder.rules[index].value = (parseFloat(rule.value) * parseFloat(Shopify.currency.rate)).toFixed(2);
+          protectMyOrder.rules[index].from = (parseFloat(rule.from) * parseFloat(Shopify.currency.rate)).toFixed(2);
+          protectMyOrder.rules[index].to = (parseFloat(rule.to) * parseFloat(Shopify.currency.rate)).toFixed(2);
+        }
+      }); {% endcomment %}
+
+
+      //protectMyOrder product variants
+      protectMyOrder.product.variants = [
+        {% for variant in protectionproductobject.variants %}
+          {
+            id: "{{ variant.id }}",
+            price: parseFloat("{{ variant.price | divided_by: 100.00 }}").toFixed(2)
+          } {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+
+      if(protectMyOrder.rules && protectMyOrder.rules.length > 0 ) {
+
+        // check protection product is already in cart
+        {% for item in cart.items %}
+          {% if item.product.id == protectionproductobject.id %}
+            protectMyOrder.existingCartItemKey = "{{ item.key }}";
+            deleteCartItemByProductId("{{ item.key }}", "{{ item.variant_id }}");
+            protectMyOrder.variantInProduct = {
+              id: "{{ item.id }}",
+              price: "{{ item.price | divided_by: 100.00 }}",
+              isExists: true
+            }
+          {% endif %}
+        {% endfor %}
+
+        console.log('protectMyOrder---------=> rules exists', protectMyOrder);
+        //calculate protection cost
+        protectMyOrder.calculateProtectionCost = ($totalPrice) => {
+          let protectionCost = 0;
+          let last_rule = protectMyOrder.rules[protectMyOrder.rules.length - 1];
+          protectMyOrder.rules?.forEach((rule, index) => {
+            if ($totalPrice >= parseFloat(rule.from) && $totalPrice <= parseFloat(rule.to)) {
+              protectionCost = rule.type === '$' ? parseFloat(rule.value) : ($totalPrice * parseFloat(rule.value)) / 100;
+            } else if ($totalPrice > parseFloat(last_rule.to)) {
+              protectionCost = last_rule.type === '$' ? parseFloat(last_rule.value) : ($totalPrice * parseFloat(last_rule.value)) / 100;
+            }
+          });
+          let convertedProtectionCost = protectionCost / parseFloat(Shopify.currency.rate);
+          return convertedProtectionCost.toFixed(2);
+        }
+
+        //get updateCart
+        async function getUpdateCart() {
+          let response = await fetch('/cart.js')
+          let data = await response.json();
+          return data;
+        }
+
+        //check variant is already exists in product
+        function checkVariantExists(price) {
+          let variant = protectMyOrder.product.variants.find((variant) => variant.price == price);
+          if(variant) {
+            protectMyOrder.variantInProduct = {
+              id: variant.id,
+              price: variant.price,
+              isExists: true
+            }
+          } else {
+            protectMyOrder.variantInProduct = {
+              isExists: false
+            }
+          }
+          return variant;
+        }
+
+        //add event listener to checkout button
+        {% comment %} let checkoutBtns = document.querySelectorAll('.cart__checkout-button');
+        checkoutBtns?.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            protectMyOrder.handleProtectionModalWhenClickd();
+        }); {% endcomment %}
+
+
+        //add event listener to checkout button
+        protectMyOrder.handleProtectionModalWhenClickd = (target) => {
+          {% comment %} let totalPrice = parseFloat(data.original_total_price) / 100;
+          protectMyOrder.protectionCost = protectMyOrder.calculateProtectionCost(totalPrice);
+          console.log('handleProtectionModalWhenClickd------');
+          ___processingCheckout('protected'); {% endcomment %}
+        
+            getUpdateCart().then((data) => {
+              let totalPrice = parseFloat(data.original_total_price) / 100;
+              protectMyOrder.protectionCost = protectMyOrder.calculateProtectionCost(totalPrice);
+              checkVariantExists(protectMyOrder.protectionCost);
+              document.querySelector('.show--protection-const').textContent = '+' + protectMyOrder.currency_symble + (protectMyOrder.protectionCost * parseFloat(Shopify.currency.rate)).toFixed(2);
+              console.log('protectionCost', protectMyOrder.currency_symble, protectMyOrder.protectionCost);
+              if(protectMyOrder.isModal) {
+                if (document.querySelector('.protection-modal')) {
+                  document.querySelector('.protection-modal').classList.add('active');
+                }
+              } else {
+                let checkbox__ = document.querySelector('.protection__checkbox__ input');
+                if(checkbox__) {
+                  if(checkbox__.checked) {
+                    ___processingCheckout('protected');
+                  } else {
+                    ___processingCheckout('regular');
+                  }
+                } else {
+                  location.href = '/cart/checkout';
+                }
+              }
+            });
+          
+        }
+
+
+        //delete cart item by protection product id
+        async function deleteCartItemByProductId(key, variant_id) {
+          try {
+            const response = await fetch('/cart/change.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                id: key,
+                quantity: 0
+              }),
+            });
+
+            // if success then reload the page
+            if (response && response.ok) {
+              // delete variant from shopify inventory throw api
+              await DeleteExistingProtectionproductobjectVariant(variant_id);
+              {% comment %} location.reload(); {% endcomment %}
+            }
+
+            console.log('Success, delte from cart:');
+          } catch (error) {
+            console.error('Error:', error);
+          }
+        }
+
+        //Delete existing protection product variant from shopify
+        async function DeleteExistingProtectionproductobjectVariant(variant_id) {
+          try {
+            const response = await fetch(`${protectMyOrder.url}/api/protection/variant-delete?shop=${Shopify.shop}`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                shop: Shopify.shop,
+                variant_id: variant_id,
+              }),
+            });
+            {% comment %} const data = await response.json(); {% endcomment %}
+            console.log('Success: varaint deleted from inventory', response);
+          } catch (error) {
+            console.error('Error:', error, error.message);
+          }
+        }
+
+        const detectWindowClickEvent = () => {
+          document.addEventListener('click', function(event) {
+            let targetClasses = event.target.classList
+            if (targetClasses.contains('cart__checkout-button') || targetClasses.contains('__protection_checkout_btn')) {
+              event.preventDefault();
+
+              protectMyOrder.checkoutBtn = event.target;
+
+              if(!protectMyOrder.isModal) {
+                event.target.setAttribute('disabled', true);
+                event.target.innerHTML = 'Processing...';
+              }
+
+              if(protectMyOrder.call === 1) {
+                protectMyOrder.call = 0;
+                protectMyOrder.handleProtectionModalWhenClickd(event.target);
+                setTimeout(() => {
+                  protectMyOrder.call = 1;
+                }, 1000)
+              }
+            }
+          }, false);
+        }
+
+        // detect when click any on element inside body
+        document.addEventListener('DOMContentLoaded', function() {
+          detectWindowClickEvent();
+        });
+
+
+        // added or remove any of elemnt , text, child node etc from body detect on mutation
+        const __protection__observer = new MutationObserver(function(mutations) {
+          detectWindowClickEvent();
+        });
+
+        __protection__observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          characterData: true
+        });
+
+        // protection snippets scripts -------------------------------------------
+        var protectionModal = document.querySelector('.protection-modal');
+        var protectionModalCloseBtn = document.querySelector('.protection-modal-close-btn');
+
+        protectionModalCloseBtn.addEventListener('click', function () {
+          protectionModal.classList.remove('active');
+        });
+
+        var protectedCheckoutBtn = document.querySelector('.protected--checkout-btn');
+        var regularCheckoutBtn = document.querySelector('.regular--checkout-btn');
+
+        protectedCheckoutBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          this.setAttribute('disabled', true);
+          regularCheckoutBtn.setAttribute('disabled', true);
+          this.innerHTML = 'Processing...';
+          ___processingCheckout('protected');
+        });
+
+        function ___processingCheckout(checkout_type) {
+          {% comment %} if (protectMyOrder.variantInProduct && protectMyOrder.variantInProduct.isExists) {
+            ___addToCart(protectMyOrder.variantInProduct.id, checkout_type);
+          } else {
+            ___fetchVariantId()
+              .then((variantId) => {
+                if (variantId) {
+                  ___addToCart(variantId, checkout_type);
+                }
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+              });
+          } {% endcomment %}
+          ___fetchVariantId()
+              .then((variantId) => {
+                if (variantId) {
+                  ___addToCart(variantId, checkout_type);
+                }
+              })
+              .catch((error) => {
+                console.error('Error:', error);
+              });
+        }
+
+        function ___addToCart(variantId, checkout_type) {
+          let bodyData = {
+            quantity: 1,
+            id: variantId
+          };
+
+          if (checkout_type === 'protected') {
+            bodyData = {
+              quantity: 1,
+              id: variantId,
+              properties: {
+                checkout_type: checkout_type,
+              },
+            };
+          }
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(bodyData),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if(protectMyOrder.checkoutBtn) {
+                protectMyOrder.checkoutBtn.removeAttribute('disabled');
+                protectMyOrder.checkoutBtn.innerHTML = 'Checkout';
+              }
+              location.href = '/cart/checkout';
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        }
+
+        function ___fetchVariantId() {
+          return fetch(`${protectMyOrder.url}/api/protection/variant-check?shop=${Shopify.shop}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              protection_cost: protectMyOrder.protectionCost,
+              shop: Shopify.shop,
+              product_id: protectMyOrder.product.product_id,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              return data.variant_id;
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        }
+
+        regularCheckoutBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          {% comment %} location.href = '/cart/checkout'; {% endcomment %}
+          this.setAttribute('disabled', true);
+          protectedCheckoutBtn.setAttribute('disabled', true);
+          this.innerHTML = 'Processing...';
+          ___processingCheckout('regular');
+        });
+      }
+    </script>
+  {% endunless %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Protect My Order",
+  "target": "body",
+  "javascript": "protect.js",
+  "stylesheet": "shield.css",
+  "settings": [
+    {
+      "type": "text",
+      "id": "modal_title",
+      "label": "Modal Title",
+      "default": "Protect My Order"
+    },
+    {
+      "type": "text",
+      "id": "modal_description",
+      "label": "Modal Description",
+      "default": "Protect your order with our protection plan."
+    },
+    {
+      "type": "header",
+      "content": "Modal Button"
+    },
+    {
+      "type": "text",
+      "id": "regular_checkout_button_text",
+      "label": "Regular Checkout Button Text",
+      "default": "Regular Checkout"
+    },
+    {
+      "type": "text",
+      "id": "protection_checkout_button_text",
+      "label": "Protection Checkout Button Text",
+      "default": "Proceed With Protection"
+    },
+    {
+      "type": "header",
+      "content": "Modal Icon"
+    },
+    {
+      "type": "range",
+      "id": "modal_icon_width",
+      "label": "Width",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "modal_icon_height",
+      "label": "Height",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Modal Close Icon"
+    },
+    {
+      "type": "range",
+      "id": "close_icon_width",
+      "label": "Width",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "close_icon_height",
+      "label": "Height",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 30,
+      "unit": "px"
+    }
+  ]
+}
+{% endschema %}

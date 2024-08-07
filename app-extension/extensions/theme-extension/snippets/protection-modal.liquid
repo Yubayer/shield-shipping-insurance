@@ -1,0 +1,339 @@
+<style>
+  {% liquid
+    #assign protection_styles = shop.metafields.protection.styles.value;
+    assign protection_styles = protection_styles
+    assign regular_checkout_btn = shop.metafields.protection.styles.value.regular_checkout_btn
+    assign protection_checkout_btn = shop.metafields.protection.styles.value.protection_checkout_btn
+    assign protection_checkout_button_text = block.settings.protection_checkout_button_text 
+    assign regular_checkout_button_text = block.settings.regular_checkout_button_text 
+    assign modal_title = block.settings.modal_title
+    #assign modal_icon = block.settings.modal_icon
+    assign modal_icon_width = block.settings.modal_icon_width
+    assign modal_icon_height = block.settings.modal_icon_height
+    assign close_icon = block.settings.close_icon
+    assign close_icon_width = block.settings.close_icon_width
+    assign close_icon_height = block.settings.close_icon_height
+  %}
+
+
+    :root{
+      --regular-checkout-btn-background-color: {{ regular_checkout_btn.background_color }};
+      --regular-checkout-btn-text-color: {{ regular_checkout_btn.text_color }};
+      --regular-checkout-btn-border-color: {{ regular_checkout_btn.border_color }};
+      --regular-checkout-btn-border-width: {{ regular_checkout_btn.border_width }};
+      --regular-checkout-btn-border-radius: {{ regular_checkout_btn.border_radius }};
+      --regular-checkout-btn-font-size: {{ regular_checkout_btn.font_size }};
+      --regular-checkout-btn-font-weight: {{ regular_checkout_btn.font_weight }};
+      --regular-checkout-btn-padding-inline: {{ regular_checkout_btn.padding_inline }};
+      --regular-checkout-btn-padding-block: {{ regular_checkout_btn.padding_block }};
+      --regular-checkout-btn-margin-inline: {{ regular_checkout_btn.margin_inline }};
+      --regular-checkout-btn-margin-block: {{ regular_checkout_btn.margin_block }};
+      --regular-checkout-btn-height: {{ regular_checkout_btn.height }};
+      --regular-checkout-btn-width: {{ regular_checkout_btn.width }};
+
+      
+      --protection-checkout-btn-background-color: {{ protection_checkout_btn.background_color }};
+      --protection-checkout-btn-text-color: {{ protection_checkout_btn.text_color }};
+      --protection-checkout-btn-border-color: {{ protection_checkout_btn.border_color }};
+      --protection-checkout-btn-border-width: {{ protection_checkout_btn.border_width }};
+      --protection-checkout-btn-border-radius: {{ protection_checkout_btn.border_radius }};
+      --protection-checkout-btn-font-size: {{ protection_checkout_btn.font_size }};
+      --protection-checkout-btn-font-weight: {{ protection_checkout_btn.font_weight }};
+      --protection-checkout-btn-padding-inline: {{ protection_checkout_btn.padding_inline }};
+      --protection-checkout-btn-padding-block: {{ protection_checkout_btn.padding_block }};
+      --protection-checkout-btn-margin-inline: {{ protection_checkout_btn.margin_inline }};
+      --protection-checkout-btn-margin-block: {{ protection_checkout_btn.margin_block }};
+      --protection-checkout-btn-height: {{ protection_checkout_btn.height }};
+      --protection-checkout-btn-width: {{ protection_checkout_btn.width }};
+    }
+
+    .protection-modal {
+      position: fixed;
+      z-index: -9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      visibility: hidden;
+      transition: visibility 0s, z-index 0s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .protection-modal.active {
+      visibility: visible;
+      z-index: 9999;
+    }
+    .protection-modal-content {
+      background: white;
+      height: max-content;
+      width: 600px;
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #EAECF0;
+      @media(max-width: 600px) {
+        width: 95vw;
+      }
+    }
+
+    .protection-modal-header {
+      display: grid;
+      grid-template-columns: minmax(0px, 1fr) auto;
+      grid-gap: 10px;
+      align-items: center;
+      .heading {
+        display: flex;
+        align-items: center;
+        h2 {
+          margin: 0;
+          padding: 0;
+        }
+        svg, img{
+          height: {{ modal_icon_height | append: 'px' }};
+          width: {{ modal_icon_width | append: 'px' }};
+          margin-right: 10px;
+        }
+      }
+    }
+
+  .protection__modal__close__icon{
+    svg{
+      height: {{ close_icon_height | append: 'px' }};
+      width: {{ close_icon_width | append: 'px' }};
+      cursor: pointer;
+    }
+  }
+
+  .protection-modal-body {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 10px;
+      justify-content: flex-start;
+      width: 100%;
+      align-items: center;
+      margin-left: 38px;
+  }
+
+    .regular--checkout-btn {
+      color: var(--regular-checkout-btn-text-color);
+      background: var(--regular-checkout-btn-background-color);
+      padding: var(--regular-checkout-btn-padding-block) var(--regular-checkout-btn-padding-inline);
+      border: var(--regular-checkout-btn-border-width) solid var(--regular-checkout-btn-border-color);
+      border-radius: var(--regular-checkout-btn-border-radius);
+      margin: var(--regular-checkout-btn-margin-block) var(--regular-checkout-btn-margin-inline);
+      cursor: pointer;
+      min-height: var(--regular-checkout-btn-height);
+      line-height: var(--regular-checkout-btn-height);
+      min-width: var(--regular-checkout-btn-width);
+      font-size: var(--regular-checkout-btn-font-size);
+      font-weight: var(--regular-checkout-btn-font-weight);
+
+      @media(max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    .regular--checkout-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .protected--checkout-btn {
+      color: var(--protection-checkout-btn-text-color);
+      background: var(--protection-checkout-btn-background-color);
+      padding: var(--protection-checkout-btn-padding-block) var(--protection-checkout-btn-padding-inline);
+      border: var(--protection-checkout-btn-border-width) solid var(--protection-checkout-btn-border-color);
+      border-radius: var(--protection-checkout-btn-border-radius);
+      margin: var(--protection-checkout-btn-margin-block) var(--protection-checkout-btn-margin-inline);
+      cursor: pointer;
+      box-sizing: border-box;
+      min-height: var(--protection-checkout-btn-height);
+      line-height: var(--protection-checkout-btn-height);
+      min-width: var(--protection-checkout-btn-width);
+      font-size: var(--protection-checkout-btn-font-size);
+      font-weight: var(--protection-checkout-btn-font-weight);
+
+      @media(max-width: 600px) {
+        width: 100%;
+      }
+    }
+    .protected--checkout-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .protection-description {
+      margin: 20px 20px 20px 42px;
+      @media(max-width: 768px) {
+        text-align: center;
+      }
+      strong {
+        font-size: 1.2em;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          margin: 10px 0;
+          padding: 0;
+          line-height: 1.3;
+        }
+      }
+    }
+</style>
+
+
+<div class="protection-modal">
+  <div class="protection-modal-content">
+    <div class="protection-modal-header">
+      <div class="heading">
+        <img src="{{ shop.metafields.protection.app_url }}/public/images/logo.png" width="30px" height="30px">
+        <h2>{{ modal_title }}</h2>
+      </div>
+      <div class="protection__modal__close__icon">
+        {% unless close_icon == blank %}
+          {{ close_icon }}
+        {% else %}
+        <svg
+          class="protection-modal-close-btn"
+          width="30px"
+          height="30px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414z" fill="#0D0D0D"/>
+        </svg>
+        {% endunless %}
+      </div>
+    </div>
+    <div class="protection-description">
+      <strong>Why use Protect My Order?</strong>
+      <ul>
+        <li>
+          Guaranteed Safe Delivery If anything goes wrong with your delivery, you are guaranteed either a reship or a
+          refund
+        </li>
+        <li>Hassle-Free Resolution We will quickly resolve shipping issues with couriers on your behalf</li>
+      </ul>
+    </div>
+    <div class="protection-modal-body">
+      <button class="protected--checkout-btn">
+        {{ protection_checkout_button_text }} <span class="show--protection-const"></span>
+      </button>
+      <button class="regular--checkout-btn">{{ regular_checkout_button_text }}</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+    {% comment %} var protectionModal = document.querySelector('.protection-modal');
+    var protectionModalCloseBtn = document.querySelector('.protection-modal-close-btn');
+  
+    protectionModalCloseBtn.addEventListener('click', function () {
+      protectionModal.classList.remove('active');
+    });
+  
+    var protectedCheckoutBtn = document.querySelector('.protected--checkout-btn');
+    var regularCheckoutBtn = document.querySelector('.regular--checkout-btn');
+  
+    protectedCheckoutBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      this.setAttribute('disabled', true);
+      regularCheckoutBtn.setAttribute('disabled', true);
+      this.innerHTML = 'Processing...';
+      ___processingCheckout('protected');
+    });
+  
+    function ___processingCheckout(checkout_type) {
+      {% comment %} if (protectMyOrder.variantInProduct && protectMyOrder.variantInProduct.isExists) {
+        ___addToCart(protectMyOrder.variantInProduct.id, checkout_type);
+      } else {
+        ___fetchVariantId()
+          .then((variantId) => {
+            if (variantId) {
+              ___addToCart(variantId, checkout_type);
+            }
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+      } {% endcomment %}
+      ___fetchVariantId()
+          .then((variantId) => {
+            if (variantId) {
+              ___addToCart(variantId, checkout_type);
+            }
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+    }
+  
+    function ___addToCart(variantId, checkout_type) {
+      let bodyData = {
+        quantity: 1,
+        id: variantId
+      };
+  
+      if (checkout_type === 'protected') {
+        bodyData = {
+          quantity: 1,
+          id: variantId,
+          properties: {
+            checkout_type: checkout_type,
+          },
+        };
+      }
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(bodyData),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          location.href = '/cart/checkout';
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  
+    function ___fetchVariantId() {
+      return fetch(`${protectMyOrder.url}/api/protection/variant-check?shop=${Shopify.shop}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          protection_cost: protectMyOrder.protectionCost,
+          shop: Shopify.shop,
+          product_id: protectMyOrder.product.product_id,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          return data.variant_id;
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  
+    regularCheckoutBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      {% comment %} location.href = '/cart/checkout'; {% endcomment %}
+      this.setAttribute('disabled', true);
+       protectedCheckoutBtn.setAttribute('disabled', true);
+      this.innerHTML = 'Processing...';
+      ___processingCheckout('regular');
+    }); {% endcomment %}
+</script>

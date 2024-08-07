@@ -1,0 +1,13 @@
+import './SelectAllActions.css';
+
+var styles = {
+  "SelectAllActions": "Polaris-SelectAllActions_1jipq",
+  "SelectAllActions-entering": "Polaris-SelectAllActions__SelectAllActions--entering_wm2u1",
+  "SelectAllActions-exiting": "Polaris-SelectAllActions__SelectAllActions--exiting_1c2of",
+  "SelectAllActions-entered": "Polaris-SelectAllActions__SelectAllActions--entered_1uaoo",
+  "SelectAllActions-exited": "Polaris-SelectAllActions__SelectAllActions--exited_1yp4f",
+  "PaginatedSelectAll": "Polaris-SelectAllActions__PaginatedSelectAll_1bm6b",
+  "AllAction": "Polaris-SelectAllActions__AllAction_eazf4"
+};
+
+export { styles as default };
