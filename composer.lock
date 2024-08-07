@@ -2733,20 +2733,20 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.4",
+            "version": "v4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "d3ad0aa3b9f934602cb3e3902ebccf10be34d218"
+                "reference": "6d70929398e4414cc52055242990cd609f54a29b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/d3ad0aa3b9f934602cb3e3902ebccf10be34d218",
-                "reference": "d3ad0aa3b9f934602cb3e3902ebccf10be34d218",
+                "url": "https://api.github.com/repos/nette/utils/zipball/6d70929398e4414cc52055242990cd609f54a29b",
+                "reference": "6d70929398e4414cc52055242990cd609f54a29b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0 <8.4"
+                "php": "8.0 - 8.4"
             },
             "conflict": {
                 "nette/finder": "<3",
@@ -2813,9 +2813,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.4"
+                "source": "https://github.com/nette/utils/tree/v4.0.5"
             },
-            "time": "2024-01-17T16:50:36+00:00"
+            "time": "2024-08-07T12:47:39+00:00"
         },
         {
             "name": "nikic/php-parser",

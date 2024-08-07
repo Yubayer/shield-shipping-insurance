@@ -24,3 +24,4 @@ worker: php artisan queue:listen --tries=10 --delay=20
 
 
 heroku git:remote -a shield-shipping-insurance
+git push heroku main
