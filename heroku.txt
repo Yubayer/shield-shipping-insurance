@@ -1,4 +1,7 @@
 1. heroku create shield-shipping-insurance --team shield-insurance
+resule: 
+Creating ⬢ shield-shipping-insurance... done
+https://shield-shipping-insurance-1b4683c0cd06.herokuapp.com/ | https://git.heroku.com/shield-shipping-insurance.git
 
 2. Add a ClearDB MySQL database (or any other Heroku database add-on you prefer):
 heroku addons:create cleardb:standard-25 --app shield-shipping-insurance
@@ -18,3 +21,6 @@ DB_PASSWORD=your-database-password
 web: vendor/bin/heroku-php-apache2 public/
 web: $(composer config bin-dir)/heroku-php-nginx -C nginx.conf public/
 worker: php artisan queue:listen --tries=10 --delay=20
+
+
+heroku git:remote -a shield-shipping-insurance
