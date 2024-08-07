@@ -1,0 +1,20 @@
+1. heroku create shield-shipping-insurance --team shield-insurance
+
+2. Add a ClearDB MySQL database (or any other Heroku database add-on you prefer):
+heroku addons:create cleardb:standard-25 --app shield-shipping-insurance
+
+3. retrive database url
+heroku config:get CLEARDB_DATABASE_URL --app shield-shipping-insurance
+
+setup database credentials (.env)
+DB_CONNECTION=mysql
+DB_HOST=your-database-hostname
+DB_PORT=3306
+DB_DATABASE=your-database-name
+DB_USERNAME=your-database-username
+DB_PASSWORD=your-database-password
+
+4. create Procfile
+web: vendor/bin/heroku-php-apache2 public/
+web: $(composer config bin-dir)/heroku-php-nginx -C nginx.conf public/
+worker: php artisan queue:listen --tries=10 --delay=20
