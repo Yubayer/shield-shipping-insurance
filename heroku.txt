@@ -57,3 +57,13 @@ git push heroku main
             "@php artisan key:generate --ansi"
         ]
     },
+
+    APP_KEY: base64:ttmeR06AD2tqRxhzG6G9Ve9IRGU5w/Du6LG+nraz+So=
+
+heroku config:set APP_KEY=$(php artisan key:generate --show) --app shield-insurance
+heroku config:set APP_ENV=production --app shield-insurance
+heroku config:set APP_DEBUG=false --app shield-insurance
+heroku config:set APP_URL=https://shield-insurance-afb1b92a3004.herokuapp.com --app shield-insurance
+heroku config:set DB_CONNECTION=mysql --app shield-insurance
+
+app_url: https://shield-insurance-afb1b92a3004.herokuapp.com

@@ -611,3 +611,26 @@
 #4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #5 {main}
 "} 
+[2024-08-08 06:32:13] local.ERROR: Unable to prepare route [auth-shop] for serialization. Another route has already been assigned name [auth-shop]. {"exception":"[object] (LogicException(code: 0): Unable to prepare route [auth-shop] for serialization. Another route has already been assigned name [auth-shop]. at /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php:247)
+[stacktrace]
+#0 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php(208): Illuminate\\Routing\\AbstractRouteCollection->addToSymfonyRoutesCollection(Object(Symfony\\Component\\Routing\\RouteCollection), Object(Illuminate\\Routing\\Route))
+#1 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php(246): Illuminate\\Routing\\AbstractRouteCollection->toSymfonyRouteCollection()
+#2 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php(192): Illuminate\\Routing\\RouteCollection->toSymfonyRouteCollection()
+#3 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php(163): Illuminate\\Routing\\AbstractRouteCollection->dumper()
+#4 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteCacheCommand.php(109): Illuminate\\Routing\\AbstractRouteCollection->compile()
+#5 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteCacheCommand.php(68): Illuminate\\Foundation\\Console\\RouteCacheCommand->buildRouteCacheFile(Object(Illuminate\\Routing\\RouteCollection))
+#6 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\RouteCacheCommand->handle()
+#7 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#10 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#11 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#12 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Command/Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteCacheCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /Users/jobayerhossain/Desktop/coding/laravel/novaalab/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
