@@ -17,7 +17,7 @@ use App\Http\Controllers\Api\WebhookController as ApiWebhookController;
 
 
 
-Route::match(['get', 'post'], '/auth-shop-novaalab', [AuthController::class, 'authenticate'])->name('auth-shop-novaalab');
+Route::match(['get', 'post'], '/auth-shop', [AuthController::class, 'authenticate'])->name('auth-shop');
 
 Route::group(['middleware' => ['verify.shopify']], function () {
     Route::get('/', [IndexController::class, 'index'])->name('home');
