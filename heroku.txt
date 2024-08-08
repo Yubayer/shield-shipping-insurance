@@ -25,3 +25,19 @@ worker: php artisan queue:listen --tries=10 --delay=20
 
 heroku git:remote -a shield-shipping-insurance
 git push heroku main
+
+// "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+// "@php artisan package:discover --ansi"
+
+"require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.2",
+        "kyon147/laravel-shopify": "^21.1",
+        "laravel/framework": "^10.0",
+        "laravel/sanctum": "^3.2",
+        "laravel/tinker": "^2.8",
+        "yoeunes/toastr": "^2.3",
+        "ext-mbstring": "*",
+        "ext-ctype": "*",
+        "ext-json": "*"
+    },
