@@ -7,15 +7,18 @@ https://shield-shipping-insurance-1b4683c0cd06.herokuapp.com/ | https://git.hero
 heroku addons:create cleardb:standard-25 --app shield-shipping-insurance
 
 3. retrive database url
-heroku config:get CLEARDB_DATABASE_URL --app shield-shipping-insurance
+heroku config:get CLEARDB_DATABASE_URL --app shield-insurance
+result: mysql://b94886d33044e5:6e96e77a@us-cluster-east-01.k8s.cleardb.net/heroku_2ba64b494c9131f?reconnect=true
+CLEARDB_DATABASE_URL=mysql://b94886d33044e5:6e96e77a@us-cluster-east-01.k8s.cleardb.net/heroku_2ba64b494c9131f?
+
 
 setup database credentials (.env)
-DB_CONNECTION=mysql
-DB_HOST=your-database-hostname
-DB_PORT=3306
-DB_DATABASE=your-database-name
-DB_USERNAME=your-database-username
-DB_PASSWORD=your-database-password
+heroku config:set DB_CONNECTION=mysql
+heroku config:set DB_HOST=us-cluster-east-01.k8s.cleardb.net
+heroku config:set DB_PORT=3306
+heroku config:set DB_DATABASE=heroku_2ba64b494c9131f
+heroku config:set DB_USERNAME=b94886d33044e5
+heroku config:set DB_PASSWORD=6e96e77a
 
 4. create Procfile
 web: vendor/bin/heroku-php-apache2 public/
@@ -65,5 +68,15 @@ heroku config:set APP_ENV=production --app shield-insurance
 heroku config:set APP_DEBUG=false --app shield-insurance
 heroku config:set APP_URL=https://shield-insurance-afb1b92a3004.herokuapp.com --app shield-insurance
 heroku config:set DB_CONNECTION=mysql --app shield-insurance
+
+heroku config:set SHOPIFY_APP_NAME="SHIELD Shipping Insurance"
+heroku config:set SHOPIFY_API_VERSION=2024-04
+heroku config:set SHOPIFY_API_KEY=3b817ac8cf5bc7f145ebe044d3cf53fb
+heroku config:set SHOPIFY_API_SECRET=d94f73d7b643304e17e1c0bfd6e21a16
+heroku config:set SHOPIFY_API_SCOPES=read_products,write_products,read_themes,read_orders,read_inventory,write_inventory
+heroku config:set SHOPIFY_BILLING_ENABLED=true
+heroku config:set SHOPIFY_MANUAL_MIGRATIONS=true
+heroku config:set SHOPIFY_ROUTE_NAME_AUTHENTICATE=auth-shop
+heroku config:set SHOPIFY_API_REDIRECT=auth-shop
 
 app_url: https://shield-insurance-afb1b92a3004.herokuapp.com
